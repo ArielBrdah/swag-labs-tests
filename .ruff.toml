@@ -1,0 +1,25 @@
+line-length = 88
+target-version = "py38"
+
+[format]
+quote-style = "double"
+
+[lint]
+select = ["E", "F", "W", "I", "N", "B", "C4", "T10", "RET", "SIM"]
+per-file-ignores = { "__init__.py" = ["F401"] }
+
+[lint.isort]
+known-first-party = ["swag_labs_tests"]
+known-third-party = ["selenium", "pytest", "allure"]
+
+# Exclusions globales
+[tool.ruff]
+ignore = [
+    ".git",
+    ".ruff_cache",
+    "__pycache__",
+    "venv",
+    "dist",
+    "build",
+    "*.egg-info"
+]

@@ -1,0 +1,14 @@
+# Dépendances principales
+selenium>=4.0.0
+webdriver-manager>=3.8.0
+pytest>=7.0.0
+pytest-xdist>=2.5.0  # Pour l'exécution parallèle des tests
+allure-pytest>=2.9.45  # Pour les rapports de test
+
+# Outils de qualité de code
+ruff>=0.1.0
+black>=23.0.0  # Formateur de code
+isort>=5.12.0  # Tri des imports
+
+# Autres dépendances
+python-dotenv>=1.0.0  # Pour la gestion des variables d'environnement
