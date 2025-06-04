@@ -32,7 +32,7 @@ jobs:
 
       - name: Run Pytest UI tests
         run: |
-          pytest tests/ui/smoke/test_login.py -v
+          python run.py test
 
       - name: Upload screenshots on failure
         if: failure()
